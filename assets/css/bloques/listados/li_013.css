@@ -1,0 +1,23 @@
+.li_013 .arrastar .handle{
+
+   top: 22px!important;
+   
+}
+.li_013 .arrastar .remove-li{
+
+   top: 22px!important;
+   
+}
+
+.gu-mirror .caja-texto{
+	display: inline-flex !important;
+	border-radius: 10px;
+  height: 35px;
+  width: auto;
+  border-width: 2px !important;
+  border-color: #212529!important;
+  border-style: solid;
+}
+.gu-mirror .span{
+	display: inline-flex !important;
+}

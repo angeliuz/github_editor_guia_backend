@@ -1,0 +1,15 @@
+@media print {
+    
+} 
+
+.titulo_padre_clase p {
+    font-family: inherit !important;
+    font-size: inherit !important;;
+    line-height: inherit !important;;
+    color: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.titulo_padre_clase .text-input:focus {outline: none;}
+.titulo_padre_clase .text-input > .text-input:focus, .text-input > .text-input:hover {outline: 1px solid red; }

@@ -1,0 +1,138 @@
+@media print {
+    
+} 
+
+.ci_003 .nav-image{
+  position: absolute;
+  top:10px;
+  z-index: 1;
+  display: none;
+
+}
+
+.ci_003 .img-main{
+  cursor: pointer;
+}
+
+
+
+
+    
+
+.ci_003 .form-upload{
+  position: absolute;
+  top:0;
+  width: 100%;
+  background: transparent;
+  display: block;
+  height: 100%
+  min-height: auto;
+  min-width: auto;
+  z-index: 0;
+  display: none;
+}
+.ci_003 .nav-image.left{
+  left: 5px;
+}
+.ci_003 .nav-image.center{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ci_003 .nav-image.right{
+  right: 5px;
+}
+
+
+.ci_003 .justicar-imagen{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.ci_003 .justicar-imagen ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ci_003 .justicar-imagen ul li{
+  display: inline-block;
+  padding: 10px;
+}
+
+
+.ci_003 .menu {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.ci_003 .menu-item {
+    border-radius: 5rem;
+}
+
+.ci_003 .menu .menu-item .menu-link {
+    font-size: .857rem;
+    min-width: 2rem;
+}
+
+
+
+.ci_003 .menu .menu-item:first-child .menu-link {
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+}
+
+.ci_003 .menu-item:last-child:not(.next-item) .menu-link {
+    border-top-right-radius: 1.428rem;
+    border-bottom-right-radius: 1.428rem;
+    border-right:none;
+}
+.ci_003 .menu-item:first-child:not(.prev-item) .menu-link {
+    border-top-left-radius: 1.428rem;
+    border-bottom-left-radius: 1.428rem;
+
+}
+
+.ci_003 .menu-link {
+    position: relative;
+    display: block;
+    color: #6e6b7b;
+    background-color: #f3f2f7;
+    border-right: 1px solid #dae1e7;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.ci_003 .menu-item .menu-link {
+    margin: 0;
+    margin-left: 0;
+    font-size: 1.1em !important;
+    min-width: 3.386rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.ci_003 .menu-item.active .menu-link {
+    background: #9a9898 !important;
+    color: #fff;
+}
+
+
+
+.ci_003 .menu-item .menu-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 1rem;
+    min-width: 2.286rem;
+}

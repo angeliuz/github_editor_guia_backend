@@ -1,0 +1,217 @@
+@media print {
+    /* Aquí irían tus reglas CSS específicas para imprimir */
+    .listado_padre_clase .handle{
+      visibility: hidden !important;
+    }
+    .listado_padre_clase .div-add-button-page{
+          margin-top: 0px!important;
+          margin-bottom:0px!important;
+          visibility: hidden !important;
+          display: none !important;
+    }
+    .listado_padre_clase .remove-li{
+      visibility: hidden !important;
+      display: none !important;
+    }
+    .btn_add_item{
+      display: none !important;
+    }
+} 
+.listado_padre_clase .fa-li {
+    left: -1.6em;
+}
+
+.listado_padre_clase p{
+  display: inline-flex;
+}
+
+.listado_padre_clase .caja-texto{
+  border-radius: 10px;
+  height: 35px;
+  width: auto;
+  border-width: 2px !important;
+  border-color: #212529!important;
+  border-style: solid;
+  display: inline-flex
+}
+
+.listado_padre_clase span.linea{
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin: 0px !important;
+  display: inline-block !important;
+}
+
+.listado_padre_clase .editable:focus {outline: none;}
+.listado_padre_clase .editable > .editable:focus, .editable > .editable:hover {outline: 1px solid red; }
+
+.listado_padre_clase .remove-li{
+  position: absolute;
+  right: 10px;
+  top:0px;
+  font-size: 0.8em;
+  cursor: pointer;
+  color:#9f9f9f;
+}
+.listado_padre_clase .editable{
+  width: 95%;
+  position: relative;
+}
+
+.listado_padre_clase .btn_add_item{
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  position: relative;
+  max-width: auto;
+  height: 36px;
+}
+.listado_padre_clase .btn_add_item .img-loading{
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0px;
+  top: 50%;
+}
+.listado_padre_clase p {
+    font-family: inherit !important;
+    font-size: inherit !important;;
+    line-height: inherit !important;;
+    color: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+
+
+.listado_padre_clase .arrastar{
+  margin-bottom:0px; 
+}
+
+.listado_padre_clase .handle{
+    visibility: visible;
+  }
+
+.listado_padre_clase.arrastar li{
+    position: relative;
+}
+.listado_padre_clase .arrastar .handle{
+   width: 20px;
+   height:20px;
+   background:rgba(201,220,255,1);
+   position: absolute;
+   left: -43px;
+   border-radius: 20%;
+   top: 5px;
+   cursor: move;
+}
+
+.listado_padre_clase .arrastar .handle i{
+    pointer-events: none;
+    font-size: 0.6em;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    width: 100%;
+    display: block;
+}
+
+
+.listado_padre_clase .arrastar li.opcion{
+  position: relative;
+}
+.listado_padre_clase .arrastar li.opcion span{
+  display:block;
+}
+.gu-mirror.opcion .arrastar .handle{
+    
+    width: 20px;
+    height:20px;
+    background:rgba(201,220,255,1);
+    position: absolute;
+    left: -43px;
+    border-radius: 20%;
+    top: 5px;
+    cursor: move;
+}
+
+.gu-mirror.opcion{
+  display: block;
+} 
+.gu-mirror.opcion .editable{
+  display: inline-block;
+  width: 90%;
+  position: relative;
+}
+.gu-mirror.opcion p {
+    font-family: inherit !important;
+    font-size: inherit !important;;
+    line-height: inherit !important;;
+    color: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.gu-mirror.opcion .remove-li{
+  position: absolute;
+  right: 10px;
+  top:0px;
+  font-size: 0.8em;
+  cursor: pointer;
+  display: none;
+}
+
+.gu-mirror.opcion .handle{
+
+    width: 20px;
+    height:20px;
+    background:rgba(201,220,255,1);
+    position: absolute;
+    left: -43px;
+    border-radius: 20%;
+    top: 5px;
+    cursor: move;
+}
+
+.gu-mirror.opcion .handle i{
+
+  pointer-events: none;
+  font-size: 0.6em;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(0,0,0,.5);
+  width: 100%;
+  display: block;
+
+}
+
+
+.gu-mirror.opcion .arrastar .handle i{
+
+    pointer-events: none;
+    font-size: 0.6em;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    width: 100%;
+    display: block;
+
+}
+
+.listado_padre_clase  .over{
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  content: '';
+  border: 2px dotted #3b9dff;
+  background: rgba(59,157,255,0.2);
+  top:0px;
+  left: 0px;
+}
+
+.listado_padre_clase .over.remove{
+  background: rgba(252,93,96,0.2);
+  border: 2px dotted rgba(252,93,96,1);
+}

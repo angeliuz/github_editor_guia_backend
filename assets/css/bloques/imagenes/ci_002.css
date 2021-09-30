@@ -1,0 +1,244 @@
+@media print {
+    .ci_002 .btn_add{
+      display: none !important;
+    }
+    .ci_002 .btn_delete{
+      display: none !important;
+    }
+    .ci_002 .ck_visible{
+      display: none !important;
+    }
+    .ci_002 .nav-image{
+      display: none !important;
+    }
+    .ci_002 .titulo-div{
+      display: inherit !important;
+    }
+
+    .ci_002 .titulo-div .text-input{
+      display: none !important;
+    }
+} 
+
+.ci_002 .nav-image{
+  position: absolute;
+  top:10px;
+  z-index: 1;
+  display: none;
+
+}
+.ci_002 p {
+    font-family: inherit !important;
+    font-size: inherit !important;;
+    line-height: inherit !important;;
+    color: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.ci_002 .form-upload{
+  position: absolute;
+  top:0;
+  width: 100%;
+  background: transparent;
+  display: block;
+  height: 100%
+  min-height: auto;
+  min-width: auto;
+  z-index: 0;
+  display: none;
+}
+.ci_002 .loading_005{
+  position: absolute;
+  top:0;
+  width: 100%;
+  background: transparent;
+  display: block;
+  height: 100%;
+  min-height: auto;
+  min-width: auto;
+  z-index: 2;
+  background: rgba(255,255,255,.2);
+  display: none;
+}
+
+.ci_002 .loading_005 img{
+
+  width: 30px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.ci_002 .btn_add{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: #88d47b;
+  color: #fff;
+  z-index: 3;
+  width: 35px;
+  height: 35px;
+  border-radius: 15%;
+}
+
+.ci_002 .btn_add i{
+  color: rgba(0,0,0,.2);
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  line-height: 33px;
+}
+
+.ci_002 .btn_delete{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: #d9d9d9;
+  color: #fff;
+  z-index: 4;
+  width: 30px;
+  height: 30px;
+  border-radius: 15%;
+  margin: 0px;
+  padding: 0px;
+}
+.ci_002 .btn_delete i{
+  color: rgba(0,0,0,.2);
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  line-height: 28px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.ci_002 .ck_visible{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5em;
+  color: #fff;
+  z-index: 3;
+  width: 15px;
+}
+
+.ci_002 .ck_visible .form-check:not(.form-switch) .form-check-input[type=checkbox]:checked {
+    background-size: 85%;
+}
+
+.ci_002 .ck_visible .form-check{
+  padding-left: 1.1em;
+}
+
+.ci_002 .img-columna{
+  cursor: pointer;
+}
+
+
+.ci_002 .menu {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.ci_002 .menu-item {
+    border-radius: 5rem;
+}
+
+.ci_002 .menu .menu-item .menu-link {
+    font-size: .857rem;
+    min-width: 3rem;
+}
+
+.ci_002 .range-imagen{
+  width: 100px;
+  margin: auto;
+}
+
+.ci_002 .menu .menu-item:first-child .menu-link {
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+}
+
+.ci_002 .menu-item:last-child:not(.next-item) .menu-link {
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border-right:none;
+}
+.ci_002 .menu-item:first-child:not(.prev-item) .menu-link {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+
+
+}
+
+.ci_002 .menu-link {
+    position: relative;
+    display: block;
+    color: #6e6b7b;
+    background-color: #f3f2f7;
+    border-right: 1px solid #dae1e7;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.ci_002 .menu-item .menu-link {
+    margin: 0;
+    margin-left: 0;
+    font-size: 1.1em !important;
+    min-width: 3.386rem;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 285px;
+}
+
+.ci_002 .menu-item .menu-link i{
+
+    line-height: 28px;
+    font-size: 1.3em;
+}
+
+.ci_002 .menu-item .menu-link .input-number{
+  line-height: 28px;
+  width: auto;
+  max-width: 50px;
+  display: block;
+  border: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent;
+  color: inherit;
+}
+
+
+.ci_002 .menu-item.active .menu-link {
+    background: #9a9898 !important;
+    color: #fff;
+}
+
+
+
+.ci_002 .menu-item .menu-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 1rem;
+    min-width: 3rem;
+}

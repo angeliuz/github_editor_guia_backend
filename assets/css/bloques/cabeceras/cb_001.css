@@ -1,0 +1,15 @@
+@media print {
+    
+} 
+
+.pl_001 p {
+    font-family: inherit !important;
+    font-size: inherit !important;;
+    line-height: inherit !important;;
+    color: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.pl_001 .text-input:focus {outline: none;}
+.pl_001 .text-input > .text-input:focus, .text-input > .text-input:hover {outline: 1px solid red; }

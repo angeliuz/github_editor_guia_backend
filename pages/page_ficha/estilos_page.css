@@ -1,0 +1,15 @@
+.fondo-page1 {
+  background: url(../../assets/images/bg_mat1.svg) top left/cover no-repeat !important;
+  -webkit-print-color-adjust: exact !important;
+  color-adjust: exact !important;
+}
+.fondo-page2 {
+  background: url(../../assets/images/fondo_mat_02.svg) top left/cover no-repeat !important;
+  -webkit-print-color-adjust: exact !important;
+  color-adjust: exact !important;
+}
+.fondo-page3 {
+  background: url(../../assets/images/fondo_mat_03.svg) top left/cover no-repeat !important;
+  -webkit-print-color-adjust: exact !important;
+  color-adjust: exact !important;
+}
