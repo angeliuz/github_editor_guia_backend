@@ -1,3 +1,10 @@
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+  var results = regex.exec(location.search);
+  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 let Firestore = {
   procesando: false,
   pages_data: [],
@@ -9,10 +16,29 @@ let Firestore = {
   init: function (cb) {
     let libro_id = sessionStorage.getItem("libro_id");
 
+    console.log(getUrlParameter("uid"));
+
     if (!libro_id) {
       //cb(false);
       //return;
-      libro_id = "6156152be9f3c"; // ID FIRESTORE DESARROLLO
+      if (getUrlParameter("uid") == "tamara") {
+        libro_id = "6156152be9f3c"; // ID FIRESTORE DESARROLLO
+      }
+      if (getUrlParameter("uid") == "david") {
+        libro_id = "61562c97c6234"; // ID FIRESTORE DESARROLLO
+      }
+      if (getUrlParameter("uid") == "erik") {
+        libro_id = "61562cb45745c"; // ID FIRESTORE DESARROLLO
+      }
+      if (getUrlParameter("uid") == "cristian") {
+        libro_id = "61562cdce2220"; // ID FIRESTORE DESARROLLO
+      }
+      if (getUrlParameter("uid") == "claudia") {
+        libro_id = "61562d084f678"; // ID FIRESTORE DESARROLLO
+      }
+      if (getUrlParameter("uid") == "jorge") {
+        libro_id = "61562d1ca3f83"; // ID FIRESTORE DESARROLLO
+      }
     }
     firebase.initializeApp(Firestore.config);
     const db = firebase.firestore();
