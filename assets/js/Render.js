@@ -100,7 +100,7 @@ let Render = {
         html+='<div class="accordion-item">';
         html+=Render.renderHeaderMenu(id,body_id,data);
         html+=' <div id="'+body_id+'" class="accordion-collapse collapse '+show+'" aria-labelledby="flush-headingOne" data-bs-parent="#menu-plantillas">';
-        html+=   '<div class="accordion-body '+Render.elementos.container_plantillas+'">';
+        html+=   '<div class="accordion-body bgc-light '+Render.elementos.container_plantillas+'">';
         html+=Render.renderPlantilla(data);
         html+=   '</div>';
         html+=' </div>';

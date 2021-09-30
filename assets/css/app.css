@@ -1,64 +1,65 @@
 @media print {
+  @page {
+    size: letter;
+  }
 
-  @page { size: letter }
-     
-
-  .main-menu{
-    width:240px;
+  .main-menu {
+    width: 240px;
     z-index: 999;
     padding: 10px;
     visibility: hidden !important;
   }
 
-  .sheet{
-        margin-top: 0mm !important;
-        margin-bottom: 0mm !important;
-        overflow: hidden !important;
+  .sheet {
+    margin-top: 0mm !important;
+    margin-bottom: 0mm !important;
+    overflow: hidden !important;
   }
-  .drag_handler{
+  .drag_handler {
     visibility: hidden !important;
   }
 
-  .remove_item{
+  .remove_item {
     visibility: hidden !important;
   }
 
-  .remove_page{
+  .remove_page {
     display: none !important;
   }
 
-  .div-add-button-page{
-  display: none !important;
+  .div-add-button-page {
+    display: none !important;
   }
-
 }
-body{
-    background: #f1f3f6 !important;
-    -webkit-transtition: margin-left .3s ease-in-out, right .3s ease-in-out;
-    transition: margin-left .3s ease-in-out, right .3s ease-in-out;
-
-  }
+body {
+  background: #f1f3f6 !important;
+  -webkit-transtition: margin-left 0.3s ease-in-out, right 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out, right 0.3s ease-in-out;
+}
 
 #wrapper p {
   font-family: inherit !important;
-  font-size: inherit !important;;
-  line-height: inherit !important;;
+  font-size: inherit !important;
+  line-height: inherit !important;
   color: inherit !important;
   margin: 0px !important;
   padding: 0px !important;
 }
-
-.gu-mirror .item {
-position: relative;
-
-
+:focus-visible {
+  border: 2px dotted #3b9dff !important;
+  outline: none;
+  border-radius: 6px;
 }
 
+.gu-mirror .item {
+  position: relative;
+}
 
-.gu-mirror .drag_handler, #wrapper .item .drag_handler{
+.gu-mirror .drag_handler,
+#wrapper .item .drag_handler {
   width: 30px;
   height: 30px;
-  
+
   background: #ffc75c;
   border-radius: 0%;
   position: relative;
@@ -70,58 +71,59 @@ position: relative;
   border-top-left-radius: 20%;
   border-bottom-left-radius: 20%;
   cursor: move;
-
-  
 }
 
-.drag_handler{
+.drag_handler {
   visibility: visible;
 }
-.remove_item{
+.remove_item {
   visibility: visible;
 }
 
-
-#add-button-page{
+#add-button-page {
   display: none;
 }
 
-.gu-mirror .drag_handler i, #wrapper .item .drag_handler i{
+.gu-mirror .drag_handler i,
+#wrapper .item .drag_handler i {
   pointer-events: none;
   line-height: 32px;
   text-align: center;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
   width: 110%;
   display: block;
-
 }
 
-.gu-mirror{
+.gu-mirror {
   border: 2px dotted #3b9dff;
-  background: rgba(59,157,255,0.2);
+  background: rgba(59, 157, 255, 0.2);
 }
 
-.item-plantilla.gu-mirror{
+.item-plantilla.gu-mirror {
   background: transparent !important;
+  border: 2px dotted #3b9dff;
 }
 .item-plantilla {
   cursor: move;
-  border: 1px solid #dddddd;
-  border-radius: 15px; 
-  margin-bottom: 0.5rem; 
+  border: 0px solid #dddddd;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
   padding-top: 5px;
   padding-bottom: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-.gu-transit{
-  z-index: 9999: 
+.gu-transit {
+  z-index: 9999;
 }
 
-.gu-mirror  .remove_item{
+.gu-mirror .remove_item {
   width: 30px;
   height: 30px;
-  
-  background:#d9d9d9;
+
+  background: #d9d9d9;
   border-radius: 0%;
   position: relative;
   float: inherit;
@@ -131,24 +133,23 @@ position: relative;
   right: -30px;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.gu-mirror  .remove_item i{
+.gu-mirror .remove_item i {
   pointer-events: none;
   line-height: 32px;
   text-align: center;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
   width: 100%;
   display: block;
 }
 
-
-#wrapper .item .remove_item{
+#wrapper .item .remove_item {
   width: 30px;
   height: 30px;
-  
-  background:#d9d9d9;
+
+  background: #d9d9d9;
   border-radius: 0%;
   position: relative;
   float: inherit;
@@ -158,13 +159,13 @@ position: relative;
   right: -30px;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.remove_page{
+.remove_page {
   width: 30px;
   height: 30px;
-  background:#fc5d60;
+  background: #fc5d60;
   border-radius: 0%;
   position: relative;
   float: inherit;
@@ -174,13 +175,12 @@ position: relative;
   right: -30px;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
-  cursor:pointer;
-
+  cursor: pointer;
 }
-.config_page{
+.config_page {
   width: 30px;
   height: 30px;
-  background:#000000;
+  background: #000000;
   border-radius: 0%;
   position: relative;
   float: inherit;
@@ -190,148 +190,132 @@ position: relative;
   right: -30px;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
-  cursor:pointer;
+  cursor: pointer;
 }
-.config_page i{
+.config_page i {
   line-height: 32px;
   text-align: center;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   width: 100%;
   display: block;
 }
-.remove_page i{
+.remove_page i {
   line-height: 32px;
   text-align: center;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   width: 100%;
   display: block;
 }
 
-#wrapper .item .remove_item i{
+#wrapper .item .remove_item i {
   pointer-events: none;
   line-height: 32px;
   text-align: center;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
   width: 100%;
   display: block;
 }
 
-
-
-
-
- #wrapper .item {
+#wrapper .item {
   position: relative;
   margin-bottom: 5px;
+}
 
- }
-
-
-
-
-#wrapper .item .over{
+#wrapper .item .over {
   position: absolute;
   width: 100%;
   height: 100%;
-  content: '';
+  content: "";
   border: 2px dotted #3b9dff;
-  background: rgba(59,157,255,0.2);
-  top:0px;
+  background: rgba(59, 157, 255, 0.2);
+  top: 0px;
   left: 0px;
   z-index: 99;
 }
 
-#wrapper .item .over.remove{
-
-  background: rgba(252,93,96,0.2);
-  border: 2px dotted rgba(252,93,96,1);
+#wrapper .item .over.remove {
+  background: rgba(252, 93, 96, 0.2);
+  border: 2px dotted rgba(252, 93, 96, 1);
 }
 
-#wrapper .item.removing{
-  opacity:.2
+#wrapper .item.removing {
+  opacity: 0.2;
 }
 
-.loading{
+.loading {
   width: 100%;
   height: 50px;
   position: relative;
-  background: rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, 0.5);
 }
-.loading img{
+.loading img {
   position: absolute;
   display: block;
   width: 40px;
   height: auto;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-
-
-.loading-page{
+.loading-page {
   width: 100%;
   height: 100%;
   position: relative;
   top: 0px;
   left: 0px;
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
 }
-.loading-page img{
+.loading-page img {
   position: absolute;
   display: block;
   width: 40px;
   height: auto;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-
 
 .hpanel {
-    border: 1px solid #eaeaea !important;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    position: relative;
-    width: 216mm;
-    height: 279mm;
+  border: 1px solid #eaeaea !important;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  position: relative;
+  width: 216mm;
+  height: 279mm;
 }
 
-.main-menu{
+.main-menu {
   font-family: "Dosis", sans-serif;
   color: #333333;
-  width:380px;
+  width: 380px;
   z-index: 999;
   padding: 0px;
   visibility: visible;
-  -moz-box-shadow:    -3px 0 5px 0 #555;
+  -moz-box-shadow: -3px 0 5px 0 #555;
   -webkit-box-shadow: -3px 0 5px 0 #555;
-  box-shadow:         -3px 0 5px 0 #555;
+  box-shadow: -3px 0 5px 0 #555;
   left: 0px;
-  -webkit-transtition: left .3s ease-in-out, right .3s ease-in-out;
-  transition: left .3s ease-in-out, right .3s ease-in-out;
+  -webkit-transtition: left 0.3s ease-in-out, right 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out, right 0.3s ease-in-out;
 }
-
 
 .main-menu.slide-out {
-    left: -380px;
+  left: -380px;
 }
-body.slide-out{
+body.slide-out {
   margin-left: 380px;
 }
 
-    
-
-
-.main-menu .cerrar_sidebar{
+.main-menu .cerrar_sidebar {
   width: 35px;
   height: 35px;
   position: absolute;
-  top:5px;
+  top: 5px;
   right: 5px;
   cursor: pointer;
 }
- .main-menu .cerrar_sidebar i{
+.main-menu .cerrar_sidebar i {
   display: block;
   text-align: center;
   line-height: 37px;
@@ -340,12 +324,12 @@ body.slide-out{
 .main-menu.menu-fixed {
   position: fixed;
   top: 0rem;
-  height: 100%
+  height: 100%;
 }
 
 .main-menu.menu-light {
-  background: #FFFFFF;
-  border-left: 1px solid #E4E7ED;
+  background: #ffffff;
+  border-left: 1px solid #e4e7ed;
 }
 
 .panel-footer {
@@ -353,90 +337,87 @@ body.slide-out{
   background: transparent !important;
   width: 100% !important;
   bottom: 0px;
-  border:none transparent;
+  border: none transparent;
 }
 
-.sheet{
+.sheet {
   margin-top: 5mm;
   overflow: inherit;
 }
 
-.items-contenedor{
+.items-contenedor {
   width: 100%;
   height: 100%;
 }
 
-.div-add-button-page{
-  margin-top:20px;
-  padding-bottom:20px;
+.div-add-button-page {
+  margin-top: 20px;
+  padding-bottom: 20px;
   visibility: visible;
 }
-#wrapper{
+#wrapper {
   min-height: inherit;
   position: relative;
 }
 
-
-#sidebar-config{
+#sidebar-config {
   display: none;
 }
 
-.mostrar{
+.mostrar {
   display: block !important;
 }
 
-#div-scroll{
+#div-scroll {
   padding-bottom: 80px;
 }
 
 #div-scroll .accordion-body {
-    padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 /*medium editor*/
 .medium-editor-toolbar li button {
-   
-     padding: 0; 
-    
+  padding: 0;
 }
 
-.medium-editor-toolbar-form-customfontsize{
+.medium-editor-toolbar-form-customfontsize {
   display: none;
 }
 
-.medium-editor-action-sizefont .medium-editor-toolbar-customfontsize-select{
-    display: block;
-    width: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.medium-editor-action-sizefont .medium-editor-toolbar-customfontsize-select {
+  display: block;
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
- #menu-plantillas .accordion-header {
-    margin-top: 0;
-
+#menu-plantillas .accordion-header {
+  margin-top: 0;
 }
 #menu-plantillas .accordion-item .accordion-button {
-    background: #f9f9fa;
-    color: #333333;
-    font-size: 0.5em;
+  background: white;
+  color: #84878d;
+  font-size: 0.5em;
+  font-weight: 400;
 }
- #menu-plantillas .accordion-item .accordion-button:focus {
-    border-color: none;
-    box-shadow: none;
+#menu-plantillas .accordion-item .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
 }
-        
-#boton_componentes{
+
+#boton_componentes {
   position: fixed;
-  top:10px;
+  top: 10px;
   left: 10px;
   width: 35px;
   height: 35px;
@@ -444,7 +425,7 @@ body.slide-out{
   border-radius: 10%;
   cursor: pointer;
 }
-#boton_componentes i{
+#boton_componentes i {
   display: block;
   text-align: center;
   font-size: 1.8em;

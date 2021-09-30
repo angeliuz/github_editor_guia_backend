@@ -1,64 +1,170 @@
+:root {
+  --transparent: transparent;
+  --primary: #73b72b;
+  --secondary: #e72889;
+  --tertiary: #d8edec;
+  --quaternary: #ebd8e8;
+  --quinary: none;
+  --sextario: #f2f7e5;
+  --septenario: #bbdfb7;
+  --lightDark: #9f9f9f;
+  --dark: #55524f;
+  --hardDark: #2e2e2e;
+  --info: #00b0f6;
+  --success: #198754;
+  --danger: #e72e3c;
+  --warning: #f1871d;
+  --light: #e5e9ec;
+  --muted: black;
+  --white: white;
+  --goku: #8f6a96;
+  --bulma: #34c1ee;
+  --krillin: #ddddd4;
+  --piccolo: #4f707f;
+  --gohan: #25beb2;
+  --vegeta: #e85b9b;
+  --trunks: #afdada;
+  --goten: #cfab89;
+  --yamcha: #7296ac;
+  --tshinhan: #bfe4f4;
+  --android18: #f9eca9;
+  --milk: #c4e4e2;
+  --pidgey: #cddfad;
+  --freezer: #f1c3dd;
+  --saitama: #ffc466;
+  --ash: #e7f4d0;
+  --pikachu: #fafbf6;
+  --leono: #ffd700;
+  --tigro: #fff7cc;
+  --pantro: #8bb63a;
+  --chitara: #e8f0d7;
+  --raichu: #1ab21e;
+  --jaga: #009ddf;
+  --luke: #12b7ee;
+  --anakin: #f5486c;
+  --bang: #813da0;
+  --sonic: #fc8833;
+  --genos: #7f3ea2;
+  --garou: #f68c39;
+  --boros: #29c4b3;
+}
 /* COLORES */
 .color-primary {
-  color: #73b72b;
+  color: var(--primary);
 }
 .color-secondary {
-  color: #e72889;
+  color: var(--secondary);
 }
 .color-tertiary {
-  color: #d8edec;
+  color: var(--tertiary);
 }
-/* .color-cuaternary {
-  color: #4f707f;
-} */
-
-/* .bgc-cuaternary {
-  background-color: #ebd8e8;
-} */
+.color-quaternary {
+  color: var(--quaternary);
+}
 .color-quinary {
-  background-color: #e85b9b;
+  background-color: var(--quinary);
 }
 .color-sextario {
-  background-color: #f2f7e5;
+  background-color: var(--sextario);
 }
 .color-septenario {
-  background-color: #bbdfb7;
+  background-color: var(--septenario);
 }
-
 .color-white {
-  color: white;
+  color: var(--white);
+}
+.color-success {
+  color: var(--success);
+}
+.color-danger {
+  color: var(--danger);
+}
+.color-warning {
+  color: var(--warning);
+}
+.color-light {
+  color: var(--light);
+}
+.color-muted {
+  color: var(--muted);
+  opacity: 0.4;
 }
 .color-lightDark {
-  color: #9f9f9f;
+  color: var(--lightDark);
 }
 .color-dark {
-  color: #55524f;
+  color: var(--dark);
 }
 .color-hardDark {
-  color: #2e2e2e;
+  color: var(--hardDark);
 }
 .color-info {
-  color: #00b0f6;
-}
-.color-flecha {
-  color: #00b0f6;
-}
-.color-1 {
-  color: #009ddf;
-}
-.color-2 {
-  color: #e72e3c;
-}
-.color-3 {
-  color: #f1871d;
+  color: var(--info);
 }
 
 /* BACKGROUND */
+
+.bgc-primary {
+  background-color: var(--primary);
+}
+.bgc-secondary {
+  background-color: var(--secondary);
+}
+.bgc-tertiary {
+  background-color: var(--tertiary);
+}
+.bgc-quaternary {
+  background-color: var(--quaternary);
+}
+.bgc-quinary {
+  background-color: var(--quinary);
+}
+.bgc-sextario {
+  background-color: var(--sextario);
+}
+.bgc-septenario {
+  background-color: var(--septenario);
+}
+.bgc-white {
+  background-color: var(--white);
+}
+.bgc-success {
+  background-color: var(--success);
+}
+.bgc-danger {
+  background-color: var(--danger);
+}
+.bgc-warning {
+  background-color: var(--warning);
+}
+.bgc-light {
+  background-color: var(--light);
+}
+.bgc-muted {
+  background-color: var(--muted);
+}
+.bgc-lightDark {
+  background-color: var(--lightDark);
+}
+.bgc-dark {
+  background-color: var(--dark);
+}
+.bgc-hardDark {
+  background-color: var(--hardDark);
+}
+.bgc-info {
+  background-color: var(--info);
+}
+
+/* BACKGROUND PARA DESARROLLO */
 .bgc-aqua {
   background-color: aqua;
 }
 .bgc-red {
   background-color: red;
+}
+.bgc-white {
+  background-color: #ffffff;
 }
 .bgc-yellow {
   background-color: yellow;
@@ -69,249 +175,327 @@
 .bgc-pink {
   background-color: pink;
 }
-.bgc-primary {
-  background-color: #73b72b;
-}
-.bgc-secondary {
-  background-color: #feecc8;
-}
-.bgc-tertiary {
-  background-color: #d8edec;
-}
-.bgc-cuaternary {
-  background-color: #ebd8e8;
-}
-.bgc-quinary {
-  background-color: #e85b9b;
-}
-.bgc-sextario {
-  background-color: #f2f7e5;
-}
-.bgc-septenario {
-  background-color: #bbdfb7;
-}
-.bgc-1 {
-  background-color: #009ddf;
-}
-.bgc-2 {
-  background-color: #e72e3c;
-}
-.bgc-3 {
-  background-color: #f1871d;
-}
-.bgc-4 {
-  background-color: #813da0;
-}
-.bgc-5 {
-  background-color: #25beb2;
-}
-.bgc-6 {
-  background-color: #fc8833;
-}
-.bgc-7 {
-  background-color: #12b7ee;
-}
-.bgc-8 {
-  background-color: #f5486c;
-}
+/* END BACKGROUND PARA DESARROLLO */
 
 /* BORDES */
 .border-color-primary {
-  border-color: #73b72b !important;
+  border-color: var(--primary) !important;
 }
 .border-color-secondary {
-  border-color: #e72889 !important;
+  border-color: var(--scondary) !important;
 }
 .border-color-tertiary {
-  border-color: #d8edec !important;
+  border-color: var(--tertiary) !important;
+}
+.border-color-quaternary {
+  border-color: var(--quaternary) !important;
 }
 .border-color-quinary {
-  border-color: #e85b9b !important;
+  border-color: var(--quinary) !important;
 }
-.border-color-hardDark {
-  border-color: #2e2e2e !important;
+.border-color-sextario {
+  border-color: var(--sextario) !important;
 }
-.border-color-dark {
-  border-color: #55524f !important;
+.border-color-septenario {
+  border-color: var(--septenario) !important;
 }
 .border-color-lightDark {
-  border-color: #9f9f9f !important;
+  border-color: var(--lightDark) !important;
 }
-/* 
-SE REEMPLAZARON POR NOMBRES ABSTRACTOS
-.border-color-violet {
-  border-color: #8f6a96 !important;
+.border-color-dark {
+  border-color: var(--dark) !important;
 }
-.border-color-lightbrown {
-  border-color: #cfab89 !important;
+.border-color-hardDark {
+  border-color: var(--hardDark) !important;
 }
-.border-color-lightblue {
-  border-color: #7296ac !important;
-} */
-.border-color-1 {
-  border-color: #009ddf !important;
+.border-color-info {
+  border-color: var(--info) !important;
 }
-.border-color-2 {
-  border-color: #e72e3c !important;
+.border-color-success {
+  border-color: var(--success) !important;
 }
-.border-color-3 {
-  border-color: #f1871d !important;
+.border-color-danger {
+  border-color: var(--danger) !important;
 }
-.border-color-4 {
-  border-color: #813da0 !important;
+.border-color-warning {
+  border-color: var(--warning) !important;
 }
-/* ROTULOS */
-.bgc-rotulo-01 {
-  background-color: #7f3ea2;
+.border-color-light {
+  border-color: var(--light) !important;
 }
-.bgc-rotulo-02 {
-  background-color: #f68c39;
+.border-color-muted {
+  border-color: var(--muted) !important;
 }
-.bgc-rotulo-03 {
-  background-color: #29c4b3;
-}
-.bgc-rotulo-04 {
-  background-color: #ffffff;
+.border-color-white {
+  border-color: var(--white) !important;
 }
 
 /* AUXILIARES */
 /* COLORS */
 .color-goku {
-  color: #8f6a96;
+  color: var(--goku);
 }
 .color-bulma {
-  color: #34c1ee;
+  color: var(--bulma);
 }
 .color-krillin {
-  color: #ddddd4;
+  color: var(--krillin);
 }
 .color-piccolo {
-  color: #4f707f;
+  color: var(--piccolo);
 }
 .color-gohan {
-  color: #25beb2;
+  color: var(--gohan);
 }
 .color-vegeta {
-  color: #e85b9b;
-}
-.color-bardock {
-  color: #00b0f6;
+  color: var(--vegeta);
 }
 .color-trunks {
-  color: #afdada;
+  color: var(--trunks);
 }
 .color-goten {
-  color: #cfab89;
+  color: var(--goten);
 }
 .color-yamcha {
-  color: #7296ac;
+  color: var(--yamcha);
 }
 .color-tshinhan {
-  /* color:  */
+  color: var(--tshinhan);
 }
 .color-android18 {
-  /* color:  */
+  color: var(--android18);
 }
 .color-milk {
-  /* color:  */
-}
-.color-yamcha {
-  /* color:  */
+  color: var(--milk);
 }
 .color-freezer {
-  /* color:  */
+  color: var(--freezer);
 }
-
+.color-saitama {
+  color: var(--saitama);
+}
+.color-ash {
+  color: var(--ash);
+}
+.color-pikachu {
+  color: var(--pikachu);
+}
+.color-leono {
+  color: var(--leono);
+}
+.color-tigro {
+  color: var(--tigro);
+}
+.color-pantro {
+  color: var(--pantro);
+}
+.color-chitara {
+  color: var(--chitara);
+}
+.color-raichu {
+  color: var(--raichu);
+}
+.color-jaga {
+  color: var(--jaga);
+}
+.color-luke {
+  color: var(--luke);
+}
+.color-anakin {
+  color: var(--anakin);
+}
+.color-bang {
+  color: var(--bang);
+}
+.color-sonic {
+  color: var(--sonic);
+}
+.color-genos {
+  color: var(--genos);
+}
+.color-garou {
+  color: var(--garou);
+}
+.color-boros {
+  color: var(--boros);
+}
 /* BORDERS */
 .border-color-goku {
-  border-color: #8f6a96 !important;
+  border-color: var(--goku) !important;
 }
 .border-color-bulma {
-  border-color: #34c1ee !important;
+  border-color: var(--bulma) !important;
 }
 .border-color-krillin {
-  border-color: #ddddd4 !important;
+  border-color: var(--krillin) !important;
 }
 .border-color-piccolo {
-  border-color: #4f707f !important;
+  border-color: var(--piccolo) !important;
 }
 .border-color-gohan {
-  border-color: #25beb2 !important;
+  border-color: var(--gohan) !important;
 }
 .border-color-vegeta {
-  border-color: #e85b9b !important;
-}
-.border-color-bardock {
-  border-color: #00b0f6 !important;
+  border-color: var(--vegeta) !important;
 }
 .border-color-trunks {
-  border-color: #afdada !important;
+  border-color: var(--trunks) !important;
 }
 .border-color-goten {
-  border-color: #cfab89 !important;
+  border-color: var(--goten) !important;
 }
 .border-color-yamcha {
-  border-color: #7296ac !important;
+  border-color: var(--yamcha) !important;
 }
 .border-color-tshinhan {
-  /* border-color:  */
+  border-color: var(--tshinhan) !important;
 }
 .border-color-android18 {
-  /* border-color:  */
+  border-color: var(--android18) !important;
 }
 .border-color-milk {
-  /* border-color:  */
+  border-color: var(--milk) !important;
 }
-.border-color-yamcha {
-  /* border-color:  */
-}
+
 .border-color-freezer {
-  /* border-color:  */
+  border-color: var(--freezer) !important;
+}
+.border-color-saitama {
+  border-color: var(--saitama) !important;
+}
+.border-color-ash {
+  border-color: var(--ash) !important;
+}
+.border-color-pikachu {
+  border-color: var(--pikachu) !important;
+}
+.border-color-leono {
+  border-color: var(--leono) !important;
+}
+.border-color-tigro {
+  border-color: var(--tigro) !important;
+}
+.border-color-pantro {
+  border-color: var(--pantro) !important;
+}
+.border-color-chitara {
+  border-color: var(--chitara) !important;
+}
+.border-color-raichu {
+  border-color: var(--raichu) !important;
+}
+.border-color-jaga {
+  border-color: var(--jaga) !important;
+}
+.border-color-luke {
+  border-color: var(--luke) !important;
+}
+.border-color-anakin {
+  border-color: var(--anakin) !important;
+}
+.border-color-bang {
+  border-color: var(--bang) !important;
+}
+.border-color-sonic {
+  border-color: var(--sonic) !important;
+}
+.border-color-genos {
+  border-color: var(--genos) !important;
+}
+.border-color-garou {
+  border-color: var(--garou) !important;
+}
+.border-color-boros {
+  border-color: var(--boros) !important;
 }
 
 /* BACKGROUND COLORS */
 .bgc-goku {
-  background-color: #8f6a96;
+  background-color: var(--goku);
 }
 .bgc-bulma {
-  background-color: #34c1ee;
+  background-color: var(--bulma);
 }
 .bgc-krillin {
-  background-color: #ddddd4;
+  background-color: var(--krillin);
 }
 .bgc-piccolo {
-  background-color: #4f707f;
+  background-color: var(--piccolo);
 }
 .bgc-gohan {
-  background-color: #25beb2;
+  background-color: var(--gohan);
 }
 .bgc-vegeta {
-  background-color: #e85b9b;
-}
-.bgc-bardock {
-  background-color: #00b0f6;
+  background-color: var(--vegeta);
 }
 .bgc-trunks {
-  background-color: #afdada;
+  background-color: var(--trunks);
 }
 .bgc-goten {
-  background-color: #cfab89;
+  background-color: var(--goten);
 }
 .bgc-yamcha {
-  background-color: #7296ac;
+  background-color: var(--yamcha);
 }
 .bgc-tshinhan {
-  /* background-color:  */
+  background-color: var(--tshinhan);
 }
 .bgc-android18 {
-  /* background-color:  */
+  background-color: var(--android18);
 }
 .bgc-milk {
-  /* background-color:  */
+  background-color: var(--milk);
 }
-.bgc-yamcha {
-  /* background-color:  */
-}
+
 .bgc-freezer {
-  /* background-color:  */
+  background-color: var(--freezer);
+}
+.bgc-saitama {
+  background-color: var(--saitama);
+}
+.bgc-ash {
+  background-color: var(--ash);
+}
+.bgc-pikachu {
+  background-color: var(--pikachu);
+}
+.bgc-leono {
+  background-color: var(--leono);
+}
+.bgc-tigro {
+  background-color: var(--tigro);
+}
+.bgc-pantro {
+  background-color: var(--pantro);
+}
+.bgc-chitara {
+  background-color: var(--chitara);
+}
+.bgc-raichu {
+  background-color: var(--raichu);
+}
+.bgc-jaga {
+  background-color: var(--jaga);
+}
+.bgc-luke {
+  background-color: var(--luke);
+}
+.bgc-anakin {
+  background-color: var(--anakin);
+}
+.bgc-bang {
+  background-color: var(--bang);
+}
+
+.bgc-sonic {
+  background-color: var(--sonic);
+}
+.bgc-genos {
+  background-color: var(--genos);
+}
+.bgc-garou {
+  background-color: var(--garou);
+}
+.bgc-boros {
+  background-color: var(--boros);
 }

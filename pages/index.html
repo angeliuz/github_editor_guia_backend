@@ -52,28 +52,20 @@
 <body class="letter slide-out">
   
   <div id="sidebar" class="main-menu menu-light menu-fixed menu-shadow slide-in">
-    <div id="btn_cerrar_sidebar" class="cerrar_sidebar">
-      <i class="fas fa-times"></i>
+    <div class="d-flex align-items-center hp-60 border-bottom">
+      <div class="p-0 flex-grow-1 "> 
+        <h5 class="msp-20 text-uppercase">Componentes</h5>
+      </div>
+      <div class="pp-10 fsp-25" style="cursor: pointer">
+        <div id="btn_cerrar_sidebar">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+      </div>
     </div>
-    <h5 class="text-center mb-4 mt-4 text-uppercase">Componentes</h5>
-    <!-- <div class="mb-4">
-
-      <select class="form-select" id="select-componentes">
-      </select>
-    </div> -->
     <div id="div-scroll"> 
-         <!--  <div id="container-plantillas" class="p-0 w-100">
-          </div> -->
-
-    <div class="accordion accordion-flush" id="menu-plantillas">
-  
-  
-  
+      <div class="accordion accordion-flush" id="menu-plantillas">
     </div>
-
-
-
-    </div>
+  </div>
 
   </div>
 
@@ -135,59 +127,15 @@
   <script>
   </script>
   <script src="../assets/js/EditorTexto.js"></script>
-
-  <!-- Títulos -->
-  <!-- <script src="../assets/js/bloques/titulos/Titulo1.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo2.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo3.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo4.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo5.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo6.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo7.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo8.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo9.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo10.js"></script>
-  <script src="../assets/js/bloques/titulos/Titulo11.js"></script> -->
-  <!-- Listados -->
- <!--  <script src="../assets/js/bloques/listados/Listado1.js"></script>
-  <script src="../assets/js/bloques/listados/Listado2.js"></script>
-  <script src="../assets/js/bloques/listados/Listado3.js"></script>
-  <script src="../assets/js/bloques/listados/Listado4.js"></script>
-  <script src="../assets/js/bloques/listados/Listado5.js"></script>
-  <script src="../assets/js/bloques/listados/Listado6.js"></script>
-  <script src="../assets/js/bloques/listados/Listado7.js"></script>
-  <script src="../assets/js/bloques/listados/Listado8.js"></script>
-  <script src="../assets/js/bloques/listados/Listado9.js"></script>
-  <script src="../assets/js/bloques/listados/Listado10.js"></script>
-  <script src="../assets/js/bloques/listados/Listado11.js"></script>
-  <script src="../assets/js/bloques/listados/Listado12.js"></script>
-  <script src="../assets/js/bloques/listados/Listado13.js"></script> -->
-
-  <!-- Imagenes -->
-  <!-- <script src="../assets/js/bloques/imagenes/Colimagen1.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen2.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen3.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen4.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen5.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen6.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen7.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen8.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen9.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen10.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen11.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen12.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen13.js"></script>
-  <script src="../assets/js/bloques/imagenes/Colimagen14.js"></script> -->
-
-   <!-- Cabeceras -->
-  <!-- <script src="../assets/js/bloques/cabeceras/Cabecera1.js"></script> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="../assets/js/Render.js"></script>
-   <script src="../assets/js/Plantilla.js"></script>
+  <script src="../assets/js/Plantilla.js"></script>
   
  
 
  
-  </script>
+ 
 
   <script>
       Plantilla.cargarObjetos(function(){

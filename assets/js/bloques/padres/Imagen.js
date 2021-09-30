@@ -494,16 +494,15 @@ class Imagen {
           $(drag_divs).css('top',($(columna).height()-$(drag_divs).height())/2);*/
           $(btn_color_globo).click(function(){
             //alert('color');
-            
+
             let clases =[
-              'bgc-primary',
-              'bgc-secondary',
               'bgc-tertiary',
-              'bgc-cuaternary',
-              'bgc-quinary',
-              'bgc-sextario',
-              'bgc-primary',
+              'bgc-quaternary',
+              'bgc-android18',
               'bgc-septenario',
+              'bgc-sextario',
+              'bgc-trunks',
+              'bgc-ash',
             ];
             let indice = 0;
             for(let i=0; i<clases.length;i++){
@@ -512,12 +511,14 @@ class Imagen {
               }
               $(drag_divs).removeClass(clases[i]);
             }
+     
             let nuevoIndice = indice+1;
-            if(nuevoIndice>clases.length){
+            if(nuevoIndice>=clases.length){
               nuevoIndice = 0;
             }
-            let clase = clases[indice+1];
-            $(drag_divs).addClass(clases[indice+1]);
+        
+            let clase = clases[nuevoIndice];
+            $(drag_divs).addClass(clases[nuevoIndice]);
 
             
             let data = {
