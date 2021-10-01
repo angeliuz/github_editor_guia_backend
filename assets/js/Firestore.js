@@ -22,7 +22,7 @@ let Firestore = {
       //cb(false);
       //return;
       if (getUrlParameter("uid") == "tamara") {
-        libro_id = "6156152be9f3c"; // ID FIRESTORE DESARROLLO
+        libro_id = "6156f898691fd"; // ID FIRESTORE DESARROLLO
       }
       if (getUrlParameter("uid") == "david") {
         libro_id = "61562c97c6234"; // ID FIRESTORE DESARROLLO
