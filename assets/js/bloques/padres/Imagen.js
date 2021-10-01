@@ -203,8 +203,8 @@ class Imagen {
         let btn_left = $(columna).find('.btn-left')[0];
         let btn_center = $(columna).find('.btn-center')[0];
         let btn_right = $(columna).find('.btn-right')[0];
+
         
-      
         let dropzone = new Dropzone(form, { 
            url: "../php/upload.php",
            dictDefaultMessage: "",

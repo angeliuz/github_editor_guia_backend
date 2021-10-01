@@ -12,7 +12,7 @@ class Imagen5 extends Imagen {
         columnas:[
                 {   
                     titulo_:'Lorem Ipsum', 
-                    titulo:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.', 
+                    titulo:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years.', 
                     porcentaje:'50',  
                     ruta:Render.elementos.sin_imagen,
                     orden:0,
@@ -21,6 +21,7 @@ class Imagen5 extends Imagen {
                     globo_pos_x:10,
                     globo_pos_y:80,
                     ancho_globo:68,
+
                 }
         ]
   };
@@ -60,13 +61,13 @@ class Imagen5 extends Imagen {
 
 
 
+ 
   render(){
     let html = Plantilla.renderDrag();
-
+ 
     let border = '';
     let data = this.data.columnas[0];
-    
-
+ 
     html+='<div class="p-0 w-100">';
     html+='     <div class="d-block msp-70 mep-20">';
     html+='         <div class="row p-0 m-0 row-column">';
@@ -75,13 +76,14 @@ class Imagen5 extends Imagen {
     html+=this.renderLoading()
     html+=this.renderNav(data);
     html+=this.renderForm()
-    html+='                 <img class="img-columna zindex-1" src="'+data.ruta+'" width="'+data.porcentaje+'%">';
+    html+='                 <img class="img-columna zindex-2" src="'+data.ruta+'" width="'+data.porcentaje+'%">';
     html+='</div>';
-
-    html+='<div class="zindex-2 bgc-tertiary color-dark position-absolute p-3 rounded-p-10  drag_div" style="width:'+data.ancho_globo+'%; left:'+data.globo_pos_x+'px; top:'+data.globo_pos_y+'px; ">';
+ 
+    html+='<div class="zindex-1 bgc-quaternary color-dark position-absolute p-3 rounded-p-10  drag_div" style="width:'+data.ancho_globo+'%; left:'+data.globo_pos_x+'px; top:'+data.globo_pos_y+'px; ">';
     html+=this.renderControlGlobo(data);
-    html+=' <div data-texto="titulo" class="justify-content-start f-nunito fw-600 fs-5 lh-sm text-input">';
+    html+=' <div data-texto="titulo_" class="justify-content-start f-nunito fw-600 fs-5 lh-sm text-input w-65">';
     html+=  data.titulo_;
+    html+=' </div>';
     html+=' <div data-texto="titulo" class="justify-content-start f-nunito fw-300 fs-6 lh-sm text-input w-65">';
     html+=  data.titulo;
     html+=' </div>';
@@ -90,7 +92,7 @@ class Imagen5 extends Imagen {
     html+='         </div>';
     html+='     </div>';
     html+='</div>';
-
+ 
     return  html;
   }
 
@@ -103,7 +105,7 @@ class Imagen5 extends Imagen {
     data.ancho_globo = 50;
     data.globo_pos_x = 10;
     data.globo_pos_y = 20;
-    data.titulo_ = 'Texto'
+    data.titulo_ = 'Texto';
     data.titulo = 'Texto'
     
 
