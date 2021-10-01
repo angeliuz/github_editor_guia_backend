@@ -197,7 +197,7 @@ class Imagen {
         let loading =  $(columna).find('.loading_005')[0];
         let btn_delete =  $(columna).find('.btn_delete')[0];
         let doc_id = $(columna).data('docid');
-        let text_input = $(columna).find('.text-input')[0];
+        let text_inputs = $(columna).find('.text-input');
         let check_input = $(columna).find('.form-check-input')[0];
         let titulo_div = $(columna).find('.titulo-div')[0];
         let btn_left = $(columna).find('.btn-left')[0];
@@ -216,7 +216,6 @@ class Imagen {
            }
         });
 
-        new MediumEditor($(text_input),EditorTexto.config());
 
         dropzone.on("addedfile", function(file) {
           $(loading).show();
@@ -412,25 +411,29 @@ class Imagen {
 
           }, false);
         }
-        if(text_input){
-          text_input.addEventListener("input", function() {
+        if(text_inputs){
+ 
+          for(let i=0; i<text_inputs.length; i++){
+              new MediumEditor($(text_inputs[i]),EditorTexto.config());
+              text_inputs[i].addEventListener("input", function() {
+ 
+              
+                let texto = $(this).data("texto");
+ 
 
-          
-            let texto = $(this).data("texto");
+                if(!texto){
+                  return;
+                }
 
+                let data = {};
+                data[texto] = $(this).html();
+ 
+                parent.columnas_db.doc(doc_id).update(data);
+ 
 
-            if(!texto){
-              return;
-            }
-      
-            let data = {};
-            data[texto] = $(this).html();
-
-            parent.columnas_db.doc(doc_id).update(data);
-           
-
-
-          }, false);
+              }, false);
+          }
+ 
         }
 
         input_number.addEventListener('input', function () {
