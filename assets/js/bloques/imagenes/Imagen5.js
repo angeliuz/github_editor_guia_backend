@@ -81,7 +81,7 @@ class Imagen5 extends Imagen {
  
     html+='<div class="zindex-1 bgc-quaternary color-dark position-absolute p-3 rounded-p-10  drag_div" style="width:'+data.ancho_globo+'%; left:'+data.globo_pos_x+'px; top:'+data.globo_pos_y+'px; ">';
     html+=this.renderControlGlobo(data);
-    html+=' <div data-texto="titulo_" class="justify-content-start f-nunito fw-600 fs-5 lh-sm text-input w-65">';
+    html+=' <div data-texto="titulo_" class="justify-content-start f-nunito fw-700 fs-5 lh-sm text-input w-65">';
     html+=  data.titulo_;
     html+=' </div>';
     html+=' <div data-texto="titulo" class="justify-content-start f-nunito fw-300 fs-6 lh-sm text-input w-65">';
