@@ -74,8 +74,8 @@ class Imagen3 extends Imagen {
     html+='</div>';
 
     html+='<div class="pt-2 d-flex">';
-    html+=' <i class="color-primary fas fa-sort-up mt-1 me-1 d-inline-block align-top"></i>';
-    html+=' <div data-texto="titulo" class="d-inline-block  w-100 text-input">';
+    html+=' <i class="color-primary fas fa-sort-up mt-1 me-1 pt-1 d-inline-block align-top"></i>';
+    html+=' <div data-texto="titulo" class="d-inline-block pt-1 w-100 text-input">';
     html+=  data.titulo;
     html+=' </div>';
     html+='</div>';

@@ -73,8 +73,8 @@ class Imagen1 extends Imagen {
     html+=this.renderForm()
     html+='                 <img class="border border-0 border-secondary img-columna" src="'+data.ruta+'" width="'+data.porcentaje+'%">';
     html+='</div>';
-    html+='<i class="color-primary fas fa-sort-up mt-1 me-1 d-inline-block align-top"></i>';
-    html+='<div data-texto="titulo" class="d-inline-block  w-75 text-input">';
+    html+='<i class="color-primary fas fa-sort-up mt-1 me-1 pt-1 d-inline-block align-top"></i>';
+    html+='<div data-texto="titulo" class="d-inline-block pt-1 w-75 text-input">';
     html+=data.titulo;
     html+='    </div>';
     html+='             </div>';
