@@ -28,7 +28,7 @@ let Firestore = {
         libro_id = "61562c97c6234"; // ID FIRESTORE DESARROLLO
       }
       if (getUrlParameter("uid") == "erik") {
-        libro_id = "61562cb45745c"; // ID FIRESTORE DESARROLLO
+        libro_id = "61571652eb906"; // ID FIRESTORE DESARROLLO
       }
       if (getUrlParameter("uid") == "cristian") {
         libro_id = "61562cdce2220"; // ID FIRESTORE DESARROLLO

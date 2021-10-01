@@ -11,7 +11,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado1.js?v=" + version,
                   data: {
                     nombre: "listado 1",
-                    imagen: "listados/lista1.png",
+                    imagen: "listados/lista001.png",
                     obj: function () {
                       return new Listado1();
                     },
@@ -22,7 +22,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado2.js?v=" + version,
                   data: {
                     nombre: "listado 2",
-                    imagen: "listados/lista2.png",
+                    imagen: "listados/lista002.png",
                     obj: function () {
                       return new Listado2();
                     },
@@ -33,7 +33,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado3.js?v=" + version,
                   data: {
                     nombre: "listado 3",
-                    imagen: "listados/lista3.png",
+                    imagen: "listados/lista003.png",
                     obj: function () {
                       return new Listado3();
                     },
@@ -44,7 +44,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado4.js?v=" + version,
                   data: {
                     nombre: "listado 4",
-                    imagen: "listados/lista4.png",
+                    imagen: "listados/lista004.png",
                     obj: function () {
                       return new Listado4();
                     },
@@ -55,7 +55,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado5.js?v=" + version,
                   data: {
                     nombre: "listado 5",
-                    imagen: "listados/lista5.png",
+                    imagen: "listados/lista005.png",
                     obj: function () {
                       return new Listado5();
                     },
@@ -66,7 +66,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado6.js?v=" + version,
                   data: {
                     nombre: "listado 6",
-                    imagen: "listados/lista6.png",
+                    imagen: "listados/lista006.png",
                     obj: function () {
                       return new Listado6();
                     },
@@ -77,7 +77,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado7.js?v=" + version,
                   data: {
                     nombre: "listado 7",
-                    imagen: "listados/lista7.png",
+                    imagen: "listados/lista007.png",
                     obj: function () {
                       return new Listado7();
                     },
@@ -88,7 +88,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado8.js?v=" + version,
                   data: {
                     nombre: "listado 8",
-                    imagen: "listados/lista8.png",
+                    imagen: "listados/lista008.png",
                     obj: function () {
                       return new Listado8();
                     },
@@ -99,7 +99,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado9.js?v=" + version,
                   data: {
                     nombre: "listado 9",
-                    imagen: "listados/lista9.png",
+                    imagen: "listados/lista009.png",
                     obj: function () {
                       return new Listado9();
                     },
@@ -111,7 +111,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado10.js?v=" + version,
                   data: {
                     nombre: "listado 10",
-                    imagen: "listados/lista10.png",
+                    imagen: "listados/lista010.png",
                     obj: function () {
                       return new Listado10();
                     },
@@ -123,7 +123,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado11.js?v=" + version,
                   data: {
                     nombre: "listado 11",
-                    imagen: "listados/lista11.png",
+                    imagen: "listados/lista011.png",
                     obj: function () {
                       return new Listado11();
                     },
@@ -134,7 +134,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado12.js?v=" + version,
                   data: {
                     nombre: "listado 12",
-                    imagen: "listados/lista12.png",
+                    imagen: "listados/lista012.png",
                     obj: function () {
                       return new Listado12();
                     },
@@ -145,7 +145,7 @@ class CargaListados  {
                   script: Plantilla.rutaScriptBloques + "listados/Listado13.js?v=" + version,
                   data: {
                     nombre: "listado 13",
-                    imagen: "listados/lista13.png",
+                    imagen: "listados/lista013.png",
                     obj: function () {
                       return new Listado13();
                     },
