@@ -11,7 +11,8 @@ class Imagen5 extends Imagen {
         },
         columnas:[
                 {   
-                    titulo:'El movimiento del viento se transmite hacia las aspas y, luego, se transforma en energía eléctrica mediante aerogeneradores.', 
+                    titulo_:'Lorem Ipsum', 
+                    titulo:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.', 
                     porcentaje:'50',  
                     ruta:Render.elementos.sin_imagen,
                     orden:0,
@@ -79,6 +80,8 @@ class Imagen5 extends Imagen {
 
     html+='<div class="zindex-2 bgc-tertiary color-dark position-absolute p-3 rounded-p-10  drag_div" style="width:'+data.ancho_globo+'%; left:'+data.globo_pos_x+'px; top:'+data.globo_pos_y+'px; ">';
     html+=this.renderControlGlobo(data);
+    html+=' <div data-texto="titulo" class="justify-content-start f-nunito fw-600 fs-5 lh-sm text-input">';
+    html+=  data.titulo_;
     html+=' <div data-texto="titulo" class="justify-content-start f-nunito fw-300 fs-6 lh-sm text-input w-65">';
     html+=  data.titulo;
     html+=' </div>';
@@ -100,6 +103,7 @@ class Imagen5 extends Imagen {
     data.ancho_globo = 50;
     data.globo_pos_x = 10;
     data.globo_pos_y = 20;
+    data.titulo_ = 'Texto'
     data.titulo = 'Texto'
     
 
