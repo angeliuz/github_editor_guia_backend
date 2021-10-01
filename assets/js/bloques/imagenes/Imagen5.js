@@ -11,7 +11,7 @@ class Imagen5 extends Imagen {
         },
         columnas:[
                 {   
-                    titulo:'Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas.', 
+                    titulo:'El movimiento del viento se transmite hacia las aspas y, luego, se transforma en energía eléctrica mediante aerogeneradores.', 
                     porcentaje:'50',  
                     ruta:Render.elementos.sin_imagen,
                     orden:0,
@@ -74,10 +74,10 @@ class Imagen5 extends Imagen {
     html+=this.renderLoading()
     html+=this.renderNav(data);
     html+=this.renderForm()
-    html+='                 <img class="img-columna zindex-2" src="'+data.ruta+'" width="'+data.porcentaje+'%">';
+    html+='                 <img class="img-columna zindex-1" src="'+data.ruta+'" width="'+data.porcentaje+'%">';
     html+='</div>';
 
-    html+='<div class="zindex-1 bgc-tertiary color-dark position-absolute p-3 rounded-p-10  drag_div" style="width:'+data.ancho_globo+'%; left:'+data.globo_pos_x+'px; top:'+data.globo_pos_y+'px; ">';
+    html+='<div class="zindex-2 bgc-tertiary color-dark position-absolute p-3 rounded-p-10  drag_div" style="width:'+data.ancho_globo+'%; left:'+data.globo_pos_x+'px; top:'+data.globo_pos_y+'px; ">';
     html+=this.renderControlGlobo(data);
     html+=' <div data-texto="titulo" class="justify-content-start f-nunito fw-300 fs-6 lh-sm text-input w-65">';
     html+=  data.titulo;
